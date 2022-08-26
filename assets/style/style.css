@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body.bg-blue {
+  background-color: #141A41;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
+button.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border: 1px solid #fff;
+  height: 300px;
+  margin-top: 150px;
+}

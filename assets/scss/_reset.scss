@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Abel', sans-serif;
+    color: #000;
+    font-size: $regular-size;
+    font-weight: 400;
+}
+body.bg-blue{
+    background-color: $blue-color;
+}   
+
+a{
+    text-decoration: none;
+}
+p{
+    margin-bottom: 0;
+}
+ul, li, ol{
+    margin: 0;
+    padding: 0;
+}
+
+button.btn:focus{
+    box-shadow: none;
+}
