@@ -6,7 +6,7 @@ $blue-color: #141A41;
 $red-color: #F82B43;
 $heading-size: 26px;
 $regular-size: 16px;
-    
+
 
 @mixin media-min($size) {
     @media screen and (min-width: $size){

@@ -37,11 +37,3 @@ button.btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
-img {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  border: 1px solid #fff;
-  height: 300px;
-  margin-top: 150px;
-}
