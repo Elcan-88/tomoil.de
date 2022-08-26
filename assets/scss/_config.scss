@@ -8,6 +8,13 @@ $heading-size: 26px;
 $regular-size: 16px;
 
 
+@mixin FlexImage {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
 @mixin media-min($size) {
     @media screen and (min-width: $size){
         @content;

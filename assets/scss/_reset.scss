@@ -15,16 +15,19 @@ body.bg-blue{
     background-color: $blue-color;
 }   
 
+h3{
+    font-size: $heading-size;
+    font-family: 'Bayon', sans-serif;
+    text-transform: uppercase;
+}
 a{
     text-decoration: none;
 }
 p{
     margin-bottom: 0;
+    line-height: 20px;
 }
-ul, li, ol{
-    margin: 0;
-    padding: 0;
-}
+
 
 button.btn:focus{
     box-shadow: none;
