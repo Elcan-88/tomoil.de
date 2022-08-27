@@ -10,25 +10,37 @@ body{
     color: #000;
     font-size: $regular-size;
     font-weight: 400;
+    background-color: $blue-color;
 }
 body.bg-blue{
     background-color: $blue-color;
 }   
 
-h3{
-    font-size: $heading-size;
-    font-family: 'Bayon', sans-serif;
-    text-transform: uppercase;
-}
 a{
+    color: unset;
     text-decoration: none;
+    &:hover{
+        color: unset;
+    }
 }
 p{
     margin-bottom: 0;
-    line-height: 20px;
 }
-
+ul, li, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 button.btn:focus{
     box-shadow: none;
+}
+
+section {
+  padding: 50px 40px;
+}
+
+.red-line{
+    border: 1px solid $red-color;
+    width: 100%;
 }

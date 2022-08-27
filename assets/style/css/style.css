@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #141A41;
+}
+
+body.bg-blue {
+  background-color: #141A41;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+a:hover {
+  color: unset;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button.btn:focus {
+  box-shadow: none;
+}
+
+section {
+  padding: 50px 40px;
+}
+
+.red-line {
+  border: 1px solid #F82B43;
+  width: 100%;
+}
+
+.accordion-nav .accordion {
+  --bs-accordion-btn-focus-border-color: transparent !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-border-color: transparent !important;
+  --bs-accordion-btn-active-icon: none !important;
+  --bs-accordion-btn-icon: none !important;
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-btn-color: #fff;
+  --bs-accordion-bg: transparent;
+  width: 300px;
+  margin-left: auto;
+}
+.accordion-nav .accordion-item {
+  background-color: transparent !important;
+}
+.accordion-nav .accordion-header {
+  box-shadow: none !important;
+}
+.accordion-nav .accordion-button {
+  font-size: 26px;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.accordion-nav .accordion-button::after {
+  display: none;
+}
+.accordion-nav .accordion-button img {
+  transition: all 0.5s;
+}
+.accordion-nav .accordion-button:not(.collapsed) {
+  color: #F82B43;
+}
+.accordion-nav .accordion-button:not(.collapsed) img {
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-nav .accordion-button:hover {
+  color: #F82B43;
+}
+.accordion-nav .accordion-body {
+  padding: 0 20px;
+}
+.accordion-nav .accordion-body ul {
+  color: #fff;
+  margin: 0;
+}
+.accordion-nav .accordion-body ul li {
+  margin-bottom: 20px;
+}
+.accordion-nav .accordion-body ul li a {
+  text-transform: uppercase;
+}
+.accordion-nav .accordion-body ul li a:hover {
+  color: #F82B43;
+}
+
+.home {
+  height: 100vh;
+}
+.home-catalogue {
+  width: 264px;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.home-catalogue img {
+  width: 100%;
+}
+.home-catalogue .download-catalogue .img {
+  width: 38px;
+  height: 41px;
+}
+.home-catalogue .download-catalogue .txt {
+  color: #fff;
+  line-height: 16px;
+  width: 85px;
+}/*# sourceMappingURL=style.css.map */
