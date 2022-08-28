@@ -21,7 +21,11 @@ h3{
     text-transform: uppercase;
 }
 a{
+    color: unset;
     text-decoration: none;
+    &:hover{
+        color: unset;
+    }
 }
 p{
     margin-bottom: 0;
@@ -31,4 +35,9 @@ p{
 
 button.btn:focus{
     box-shadow: none;
+}
+
+.red-line{
+    border: 1px solid $red-color;
+    width: 100%;
 }
