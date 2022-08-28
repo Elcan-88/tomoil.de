@@ -4,13 +4,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
 body {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
   color: #000;
   font-size: 16px;
   font-weight: 400;
@@ -22,7 +21,7 @@ body.bg-blue {
 
 h3 {
   font-size: 26px;
-  font-family: 'Bayon', sans-serif;
+  font-family: "Bayon", sans-serif;
   text-transform: uppercase;
 }
 
@@ -30,7 +29,6 @@ a {
   color: unset;
   text-decoration: none;
 }
-
 a:hover {
   color: unset;
 }
@@ -41,8 +39,7 @@ p {
 }
 
 button.btn:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .red-line {
@@ -62,68 +59,49 @@ button.btn:focus {
   width: 300px;
   margin-left: auto;
 }
-
 .accordion-nav .accordion-item {
   background-color: transparent !important;
 }
-
 .accordion-nav .accordion-header {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
-
 .accordion-nav .accordion-button {
   font-size: 26px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-transform: uppercase;
-  font-family: 'Bayon', sans-serif;
+  font-family: "Bayon", sans-serif;
 }
-
 .accordion-nav .accordion-button::after {
   display: none;
 }
-
 .accordion-nav .accordion-button img {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .accordion-nav .accordion-button:not(.collapsed) {
   color: #F82B43;
 }
-
 .accordion-nav .accordion-button:not(.collapsed) img {
-  -webkit-filter: invert(30%) sepia(79%) saturate(3463%) hue-rotate(336deg) brightness(96%) contrast(103%);
-          filter: invert(30%) sepia(79%) saturate(3463%) hue-rotate(336deg) brightness(96%) contrast(103%);
+  filter: invert(30%) sepia(79%) saturate(3463%) hue-rotate(336deg) brightness(96%) contrast(103%);
 }
-
 .accordion-nav .accordion-button:hover {
   color: #F82B43;
 }
-
 .accordion-nav .accordion-body {
   padding: 0 20px;
 }
-
 .accordion-nav .accordion-body ul {
   color: #fff;
   margin: 0;
 }
-
 .accordion-nav .accordion-body ul li {
   margin-bottom: 20px;
 }
-
 .accordion-nav .accordion-body ul li a {
   text-transform: uppercase;
 }
-
 .accordion-nav .accordion-body ul li a:hover {
   color: #F82B43;
 }
-
 .accordion-nav .accordion-body ul li.active {
   color: #F82B43;
 }
@@ -132,26 +110,64 @@ button.btn:focus {
   height: 100vh;
   padding: 50px 40px;
 }
-
 .home-catalogue {
   width: 264px;
   margin-left: auto;
   margin-bottom: 20px;
 }
-
 .home-catalogue img {
   width: 100%;
 }
-
 .home-catalogue .download-catalogue .img {
   width: 38px;
   height: 41px;
 }
-
 .home-catalogue .download-catalogue .txt {
   color: #fff;
   line-height: 16px;
   width: 85px;
+}
+.home .typing-effect {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  right: 0;
+}
+.home .typing-effect #title {
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.home .typing-effect #text2 {
+  display: inline-block;
+  padding-left: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: black 2px 2px;
+  overflow: hidden;
+  border-right: 0.1em solid orange;
+  letter-spacing: 0.15em;
+  -webkit-animation: blink-caret 0.75s step-end infinite;
+          animation: blink-caret 0.75s step-end infinite;
+}
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
 }
 
 .vertical-menu {
@@ -162,18 +178,22 @@ button.btn:focus {
   height: 100%;
   background-color: #141A41;
   z-index: 1000;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
-
 .vertical-menu #sidebar {
   padding: 43px 30px 58px 40px;
 }
-
 .vertical-menu #sidebar .logo img {
   height: 90vh;
 }
-
+.vertical-menu #sidebar .quote h1 {
+  font-size: 48px;
+}
+.vertical-menu #sidebar .quote p {
+  text-indent: 10px;
+  color: #e5e5e5;
+  font-size: 15px;
+}
 @media screen and (max-width: 992px) {
   .vertical-menu {
     left: -1000px;
@@ -183,34 +203,22 @@ button.btn:focus {
 .content {
   margin-left: 420px;
 }
-
 .content.flex-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column;
   height: 100vh;
 }
-
 .content-body {
   margin: 51px 0;
   padding-left: 20px;
 }
-
 .content-body article {
   margin-top: 1.6rem;
 }
-
 .content-body article p {
   margin-bottom: 1rem;
 }
-
 @media screen and (max-width: 992px) {
   .content {
     margin-left: 0;
@@ -223,28 +231,21 @@ button.btn:focus {
 .question-item {
   border-bottom: 2px solid #000;
 }
-
 .question-item.active > .question-item__header {
   padding-left: 5px;
   padding-right: 5px;
 }
-
 .question-item.active > .question-item__header img {
-  -webkit-filter: invert(30%) sepia(79%) saturate(3463%) hue-rotate(336deg) brightness(96%) contrast(103%);
-          filter: invert(30%) sepia(79%) saturate(3463%) hue-rotate(336deg) brightness(96%) contrast(103%);
+  filter: invert(30%) sepia(79%) saturate(3463%) hue-rotate(336deg) brightness(96%) contrast(103%);
 }
-
 .question-item__header {
   padding: 10px 0;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
+  transition: 0.2s ease;
   cursor: pointer;
 }
-
 .question-item__header img {
   margin-left: 1.5rem;
 }
-
 .question-item__body {
   padding: 8px 0 18px;
-}
+}/*# sourceMappingURL=style.css.map */
