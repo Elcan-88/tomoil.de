@@ -14,7 +14,9 @@ body{
 body.bg-blue{
     background-color: $blue-color;
 }   
-
+h1{
+    font-size: 40px;
+}
 h3{
     font-size: $heading-size;
     font-family: 'Bayon', sans-serif;
@@ -37,7 +39,18 @@ button.btn:focus{
     box-shadow: none;
 }
 
+.flex-center{
+    @include FlexCenter;
+}
+.flex-end-center{
+    @include FlexItem(end, center);
+}
+
 .red-line{
     border: 1px solid $red-color;
     width: 100%;
+}
+
+.toggle-menu{
+    left: 0 !important;    
 }

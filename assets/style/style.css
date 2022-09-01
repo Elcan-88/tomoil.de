@@ -20,6 +20,10 @@ body.bg-blue {
   background-color: #141A41;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 h3 {
   font-size: 26px;
   font-family: 'Bayon', sans-serif;
@@ -45,9 +49,63 @@ button.btn:focus {
           box-shadow: none;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-end-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .red-line {
   border: 1px solid #F82B43;
   width: 100%;
+}
+
+.toggle-menu {
+  left: 0 !important;
+}
+
+.header {
+  background-color: #141A41;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.header-menu {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-menu .logo img {
+  margin-left: 65px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 20px;
 }
 
 .accordion-nav .accordion {
@@ -110,6 +168,7 @@ button.btn:focus {
 .accordion-nav .accordion-body ul {
   color: #fff;
   margin: 0;
+  text-align: center;
 }
 
 .accordion-nav .accordion-body ul li {
@@ -154,6 +213,57 @@ button.btn:focus {
   width: 85px;
 }
 
+.home .typing-effect {
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  right: 0;
+}
+
+.home .typing-effect #title {
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.home .typing-effect #text2 {
+  display: inline-block;
+  padding-left: 2%;
+  text-shadow: black 2px 2px;
+  overflow: hidden;
+  border-right: 0.1em solid orange;
+  -webkit-animation: blink-caret 0.75s step-end infinite;
+          animation: blink-caret 0.75s step-end infinite;
+}
+
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
 .vertical-menu {
   position: fixed;
   top: 0;
@@ -167,15 +277,39 @@ button.btn:focus {
 }
 
 .vertical-menu #sidebar {
-  padding: 43px 30px 58px 40px;
+  padding: 43px 36px 58px;
+}
+
+.vertical-menu #sidebar .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 26px;
 }
 
 .vertical-menu #sidebar .logo img {
   height: 90vh;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .vertical-menu #sidebar .logo img {
+    height: 70vh;
+  }
+}
+
+.vertical-menu #sidebar .quote h1 {
+  font-size: 48px;
+}
+
+.vertical-menu #sidebar .quote p {
+  text-indent: 10px;
+  color: #e5e5e5;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
   .vertical-menu {
+    width: 100%;
+    overflow-y: auto;
     left: -1000px;
   }
 }
@@ -211,7 +345,7 @@ button.btn:focus {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .content {
     margin-left: 0;
   }
@@ -247,4 +381,71 @@ button.btn:focus {
 
 .question-item__body {
   padding: 8px 0 18px;
+}
+
+.footer-menu ul {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  h1, h3 {
+    font-size: 20px;
+  }
+  .vertical-menu #sidebar {
+    padding-bottom: 27px;
+    padding-top: 70px;
+    padding-right: 26px;
+  }
+  .typing-effect {
+    position: inherit !important;
+    margin-left: 1.7rem;
+    margin-top: -1.7rem;
+  }
+  .home {
+    height: auto;
+    padding-bottom: 27px;
+    padding-top: 70px;
+    padding-right: 26px;
+  }
+  .home .logo img {
+    height: 70vh !important;
+  }
+  .accordion-nav .accordion-button {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    font-size: 20px;
+  }
+  .accordion-nav .accordion-body ul {
+    text-align: end;
+  }
+  .home-catalogue {
+    margin-top: 43px;
+    width: auto;
+  }
+  .home-catalogue .download-catalogue .img {
+    height: 20px;
+    width: 20px;
+  }
+  .home-catalogue .download-catalogue .txt {
+    width: auto;
+  }
+  .home-catalogue .catalogue-book img {
+    height: 160px;
+    width: 113px;
+  }
 }

@@ -1,5 +1,12 @@
-$(document).ready(function(){
-    $('.question > .question-item > .question-item__body').hide();
+window.addEventListener('load', myInit, true);
+
+function myInit(){
+  Typing();
+  Accordion();    
+}
+
+function Accordion(){
+  $('.question > .question-item > .question-item__body').hide();
       
     $('.question > .question-item .question-item__header').click(function() {
       const item = $(this).parent();
@@ -14,4 +21,14 @@ $(document).ready(function(){
     });
     
     $('.question > .question-item.active').find(".question-item__body").css('display','block');
-});
+}
+
+function openMenu(){
+  const menu = document.querySelector('.vertical-menu');
+  menu.classList.add('toggle-menu');      
+}
+
+function closeMenu(){
+  const menu = document.querySelector('.vertical-menu');
+  menu.classList.remove('toggle-menu');      
+}

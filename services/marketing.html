@@ -10,87 +10,144 @@
 </head>
 <body>
 
+    <!-- ==== HEADER MENU ====  -->
+    <header class="header d-md-none">
+        <div class="container">
+            <div class="header-menu">
+                <a href="#" class="logo">
+                    <img src="../assets/img/logo/tomoil-logo.png" alt="Tomoil Logo">
+                </a>
+                <span onclick="openMenu()">
+                    <img src="../assets/img/icons/menu.svg" alt="Tomoil Menu">
+                </span>
+            </div>
+        </div>
+    </header>
+
     <!-- ==== LEFT SIDEBAR START ====  -->
     <div class="vertical-menu">
-        <div id="sidebar" class="row">
-            <div class="col-3">
-                <div class="logo">
-                    <img src="../assets/img/logo/tomoil-logo.png" alt="Tomoil Logo">
-                </div> 
+        <div id="sidebar">
+            <div class="d-md-none close-btn" onclick="closeMenu()">
+                <img src="../assets/img/icons/close.svg" alt="Tomoil Close">
             </div>
-             <div class="col-9 p-0">
-                <div class="accordion-nav">
-                    <div class="accordion accordion-nav" id="accordionExample">
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span class="me-2"> Company</span>
-                                    <img src="../assets/img/icons/down-white.svg" alt="">
-                                </button>
-                            </div>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled text-center">
-                                        <li><a href="./company/why-tomoil.html"> WHY TOMOIL</a></li>
-                                        <li><a href="./company/vision-and-mission.html"> MISSION AND VISION</a></li>
-                                        <li><a href="./company/culture.html"> CULTURE</a></li>
-                                    </ul>
+            <div class="row">
+                <div class="col-4 col-md-5">
+                    <div class="logo">
+                        <img src="../assets/img/logo/tomoil-logo.png" alt="Tomoil Logo">
+                    </div> 
+                </div>
+                <div class="col-8 col-md-7 p-0">
+                    <div class="accordion-nav d-flex">
+                        <div class="accordion accordion-nav" id="accordionExample">
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="me-2"> Company</span>
+                                        <img src="../assets/img/icons/down-white.svg" alt="">
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled">
+                                            <li><a href="./company/why-tomoil.html"> WHY TOMOIL</a></li>
+                                            <li><a href="./company/vision-and-mission.html"> MISSION AND VISION</a></li>
+                                            <li><a href="./company/culture.html"> CULTURE</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="me-2"> Products</span>
-                                    <img src="../assets/img/icons/down-white.svg" alt="">
-                                </button>
-                            </div>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <ul class="list-unstyled text-center">
-                                    <li><a href="#">MOTOR OIL FOR CARS</a></li>
-                                    <li><a href="#">MOTOR OIL FOR TRUCKS AND BUSES</a></li>
-                                    <li><a href="#">MOTOR OIL FOR BIKES AND SCOOTERS</a></li>
-                                    <li><a href="#">GEAR OILS AND TRANSMISSION FLUIDS</a></li>
-                                    <li><a href="#">BREAK FLUID</a></li>
-                                    <li><a href="#">INDUSTRIAL OILS</a></li>
-                                    <li><a href="#">ANTIFREEZE AND COOLANTS</a></li>
-                                    <li><a href="#">ADBLUE</a></li>
-                                    </ul>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="me-2"> Products</span>
+                                        <img src="../assets/img/icons/down-white.svg" alt="">
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">MOTOR OIL FOR CARS</a></li>
+                                            <li><a href="#">MOTOR OIL FOR TRUCKS AND BUSES</a></li>
+                                            <li><a href="#">MOTOR OIL FOR BIKES AND SCOOTERS</a></li>
+                                            <li><a href="#">GEAR OILS AND TRANSMISSION FLUIDS</a></li>
+                                            <li><a href="#">BREAK FLUID</a></li>
+                                            <li><a href="#">INDUSTRIAL OILS</a></li>
+                                            <li><a href="#">ANTIFREEZE AND COOLANTS</a></li>
+                                            <li><a href="#">ADBLUE</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingThree">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="me-2"> Services</span>
-                                    <img src="../assets/img/icons/down-white.svg" alt="">
-                                </button>
+                            <div class="accordion-item">
+                                <div class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span class="me-2"> Services</span>
+                                        <img src="../assets/img/icons/down-white.svg" alt="">
+                                    </button>
+                                </div>
+                                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li class="active"><a href="../services/marketing.html">MARKETING SUPPORT</a></li>
+                                        <li><a href="../services/fleet.html">FLEET SOLUTIONS</a></li>
+                                        <li><a href="../services/industry.html">INDUSTRY SOLUTIONS</a></li>
+                                    </ul>
+                                </div>  
+                                </div>
                             </div>
-                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul class="list-unstyled text-center">
-                                <li class="active"><a href="../services/marketing.html">MARKETING SUPPORT</a></li>
-                                <li><a href="../services/fleet.html">FLEET SOLUTIONS</a></li>
-                                <li><a href="../services/industry.html">INDUSTRY SOLUTIONS</a></li>
-                                </ul>
-                            </div>  
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header">
-                                <a href="contact.html" class="accordion-button collapsed">
-                                    Contact
-                                </a>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="contact.html" class="accordion-button collapsed">
+                                        Contact
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="quote text-light mt-5 ps-4 pe-4">
+                        <h1 class="m-0">‘’</h1>
+                        <p> Premium lubrciants and auto-chemicals combined with excellent customer service and support. This is the Tomoil mission. An integral part of this mission is providing our customers, contractors and associates with solutions and materials necessary to promote Tomoil products.</p>
+                        <h1 class="mt-4 text-end">’’</h1>
+                    </div> -->
+                </div>
+
+                <div class="d-md-none">
+                    <div class="typing-effect text-light" style="margin-left: 1.9rem;margin-top:-1.5rem;">
+                        <div id="title">
+                        <h1 id="text2"></h1>
+                        </div>
+                    </div>
+
+                    <div class="flex-end-center home-catalogue">
+                        <a class="flex-end-center download-catalogue" href="" download>
+                            <div class="txt text-end me-2">
+                            <span>Download the<br> 2022 catalogue</span>
+                            </div>
+                            <div class="img">
+                            <img src="../assets/img/icons/download.png" alt="">
+                            </div>
+                        </a>
+                        <div class="catalogue-book ms-4">
+                            <img src="../assets/img/catalogue.png" alt="">
+                            <div class="red-line mt-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
              </div>
-            
         </div>  
     </div>
 
+
+    <!-- ==== CONTENT SECTION ====  -->
     <section class="content flex-img">
         <div class="container">
             <div class="content-body">
@@ -116,6 +173,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/typing.js"></script>
     
 </body>
 </html>

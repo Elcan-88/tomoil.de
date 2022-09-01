@@ -1,6 +1,23 @@
 @import 'config';
 @import 'reset';
 
+.header{
+  background-color: $blue-color;
+  padding: 10px 0;
+  color: #fff;
+  &-menu{
+    height: 50px;
+    @include FlexItem(space-between, center);
+    .logo{
+      img{
+        margin-left: 65px;
+        transform: rotate(90deg);
+        width: 20px;
+      }
+    }
+  }
+}
+
 .accordion-nav {
     .accordion {
       --bs-accordion-btn-focus-border-color: transparent !important;
@@ -45,6 +62,7 @@
         ul {
           color: #fff;
           margin: 0;
+          text-align: center;
           li {
             margin-bottom: 20px;
             a {
@@ -84,6 +102,40 @@
         }
       }
     }
+    .typing-effect {
+      position: absolute;
+      bottom: 5%;
+      left: 15% ;
+      right: 0;
+      #title {
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        width: 100%;
+      }
+  
+      #text2 {
+        display: inline-block;
+        padding-left: 2%;
+        text-shadow: black 2px 2px;
+        overflow: hidden;
+        border-right: 0.1em solid orange;
+        animation: blink-caret 0.75s step-end infinite;
+      }
+  
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgb(255, 255, 255);
+        }
+      }
+    }
 }
 
 .vertical-menu{
@@ -97,15 +149,37 @@
     transition: .4s ease-in-out;
     
     #sidebar{
-        padding: 43px 30px 58px 40px;
+        padding: 43px 36px 58px;
+        .close-btn{
+          position: absolute;
+          top: 20px;
+          right: 26px;
+        }
         .logo img{
             height: 90vh;
+            @include media-max(768px){
+              &{
+                height: 70vh;
+              }
+            }
+        }
+        .quote {
+          h1 {
+            font-size: 48px;
+          }
+          p {
+            text-indent: 10px;
+            color: #e5e5e5;
+            font-size: 15px;
+          }
         }
     }
 
-    @include media-max(992px){
+    @include media-max(768px){
         &{
-            left: -1000px;
+            width: 100%;
+            overflow-y: auto;
+            left: -1000px; 
         }
     }
 }
@@ -125,7 +199,7 @@
             }
         }
     }
-    @include media-max(992px){
+    @include media-max(768px){
         &{
             margin-left: 0;
             &-body{
@@ -157,6 +231,15 @@
             padding: 8px 0 18px;
         }
     }
+}
+
+.footer-menu{
+  ul{
+    margin-bottom: 0;
+    @include FlexItem(space-between, center);
+    color: #fff;
+    margin-top: 80px;
+  }
 }
 
 
