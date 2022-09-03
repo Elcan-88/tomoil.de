@@ -16,7 +16,10 @@
     .typing-effect{
         position: inherit !important;
         margin-left: 1.7rem;
-        margin-top: -1.7rem;
+        margin-top: -1.5rem;
+        #title{
+            margin-left: 0;
+        }
     }
 
     .home {
@@ -25,9 +28,7 @@
         padding-top: 70px;
         padding-right: 26px;
         .logo{
-            img{
-                height: 70vh !important;
-            }
+            height: 70vh !important;
         }
     }
 

@@ -192,10 +192,21 @@ button.btn:focus {
   padding: 50px 40px;
 }
 
+.home .logo {
+  height: 86vh;
+}
+
 .home-catalogue {
+  margin-bottom: 20px;
+}
+
+.home-catalogue .image {
   width: 264px;
   margin-left: auto;
-  margin-bottom: 20px;
+}
+
+.home-catalogue .image img {
+  width: 100%;
 }
 
 .home-catalogue img {
@@ -214,27 +225,24 @@ button.btn:focus {
 }
 
 .home .typing-effect {
-  position: absolute;
+  bottom: 6%;
+}
+
+.typing-effect {
+  position: relative;
   bottom: 5%;
-  left: 15%;
+  left: 0;
   right: 0;
 }
 
-.home .typing-effect #title {
+.typing-effect #title {
   white-space: nowrap;
-  text-align: center;
   vertical-align: middle;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 100%;
-  width: 100%;
+  margin-left: 15%;
 }
 
-.home .typing-effect #text2 {
+.typing-effect #text2 {
   display: inline-block;
   padding-left: 2%;
   text-shadow: black 2px 2px;
@@ -413,7 +421,10 @@ button.btn:focus {
   .typing-effect {
     position: inherit !important;
     margin-left: 1.7rem;
-    margin-top: -1.7rem;
+    margin-top: -1.5rem;
+  }
+  .typing-effect #title {
+    margin-left: 0;
   }
   .home {
     height: auto;
@@ -421,7 +432,7 @@ button.btn:focus {
     padding-top: 70px;
     padding-right: 26px;
   }
-  .home .logo img {
+  .home .logo {
     height: 70vh !important;
   }
   .accordion-nav .accordion-button {
